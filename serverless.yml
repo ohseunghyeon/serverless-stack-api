@@ -1,3 +1,5 @@
+org: postercolo
+app: notes-app-api-app
 service: notes-app-api
 
 # Create an optimized package for our functions
@@ -33,7 +35,7 @@ provider:
         - dynamodb:PutItem
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
-      Resource: "arn:aws:dynamodb:us-east-2:*:*"
+      Resource: "arn:aws:dynamodb:us-east-2:068751957835:table/notes"
 
 # Create our resources with separate CloudFormation templates
 resources:
